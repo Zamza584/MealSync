@@ -6,7 +6,7 @@ name: Build and deploy ASP.Net Core app to Azure Web App - MealSync
 on:
   push:
     branches:
-      - main
+      - 'main'
   workflow_dispatch:
 
 jobs:
@@ -51,9 +51,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_41C03875A50545A29E2F4EF13E72AEFE }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_9116BEE9C4174FA38871A82A4281DF40 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_CCC4D8B6F16D4036B4035E820A3D0A03 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_CAB4CD09A55D48ECA498A4533576371E }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_148024C347864787951323977C267FE8 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_D8A053A2D1E4447791B97339F38752A8 }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
